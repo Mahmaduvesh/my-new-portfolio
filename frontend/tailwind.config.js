@@ -31,6 +31,9 @@ module.exports = {
           "100%": { backgroundPosition: "0% 50%" },
         },
       },
+      borderColor: {
+        "gradient-border": "linear-gradient(45deg, #4b6cb7, #182848)", // Custom gradient border color
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ import {
   AiFillFacebook,
   AiFillMail,
 } from "react-icons/ai";
-import MatterComponent from "../components/MatterComponent";
+import MatterComponent from "../components/MatterComponent"; // Make sure this component is set up correctly
 import AboutPopup from "../components/AboutPopup"; // Import AboutPopup component
 import { FaGithub } from "react-icons/fa";
 
@@ -16,6 +16,7 @@ const About = () => {
   const [role, setRole] = useState("Shopify Developer");
   const [isPopupOpen, setPopupOpen] = useState(false); // State to manage the popup visibility
 
+  // Function to handle role changes every 4 seconds
   useEffect(() => {
     const roles = [
       "Shopify Developer",
@@ -47,7 +48,8 @@ const About = () => {
       id="about"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center py-12 px-6 md:px-8"
     >
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      {/* Matter.js Component */}
+      <div className="absolute top-0 left-0 w-full min-h-screen z-0">
         <MatterComponent />
       </div>
 
@@ -78,12 +80,6 @@ const About = () => {
               {role}
             </span>
           </p>
-          {/* <p className="text-base sm:text-lg text-black mb-8 leading-relaxed">
-            I help business owners and busy web developers design & develop
-            creative websites that fit their vision and attract visitors to stay
-            forever. Technologies and tools that I use to create such awesome
-            websites:
-          </p> */}
 
           <button
             className="flex items-center px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg shadow-lg"
@@ -99,46 +95,57 @@ const About = () => {
 
         {/* Social Media Icons */}
         <div className="flex flex-wrap justify-center md:justify-start md:flex-col items-center space-x-4 md:space-x-0 md:space-y-4">
+          {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/mahmaduvesh-khalifa-b48ba41a0/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
           >
             <AiFillLinkedin className="text-white text-2xl" />
           </a>
+
+          {/* GitHub */}
           <a
-            href="https://www.github.com"
+            href="https://github.com/mahmaduvesh"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-primary rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
           >
             <FaGithub className="text-white text-2xl" />
           </a>
+
+          {/* Twitter */}
           <a
-            href="https://twitter.com"
+            href="https://x.com/Mahmaduvesh_k"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
           >
             <AiFillTwitterCircle className="text-white text-2xl" />
           </a>
+
+          {/* Email */}
           <a
-            href="mailto:someone@example.com"
+            href="mailto:khalifamahmaduvesh@gmail.com"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
           >
             <AiFillMail className="text-white text-2xl" />
           </a>
+
+          {/* Instagram */}
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/mr_uv_0311/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
           >
             <AiFillInstagram className="text-white text-2xl" />
           </a>
+
+          {/* Facebook */}
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/uvesh.khalifa.94"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"

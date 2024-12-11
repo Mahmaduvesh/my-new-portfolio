@@ -6,6 +6,9 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Education from "../components/Education";
+import LatestWork from "./LatestWork";
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -18,6 +21,11 @@ const Home = () => {
         <About />
       </section>
 
+      {/* LatestWork Section */}
+      <section id="LatestWork">
+        <LatestWork />
+      </section>
+
       {/* Skills Section */}
       <section id="skills">
         <Skills />
@@ -28,14 +36,19 @@ const Home = () => {
         <Experience />
       </section>
 
-      {/* Projects Section */}
-      <section id="projects">
-        <Projects />
-      </section>
-
       {/* Education Section */}
       <section id="education">
         <Education />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <Contact />
+      </section>
+
+      {/* Footer Section */}
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
