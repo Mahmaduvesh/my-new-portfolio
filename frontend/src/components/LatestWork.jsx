@@ -1,7 +1,6 @@
 // src/components/Skills.jsx
 import React from "react";
 import Portfolio from "../assets/images/portfolio.png";
-import PioneerDigital from "../assets/images/pioneer-digital.webp";
 import HutsHunts from "../assets/images/HutsHunts.png";
 import Buildco from "../assets/images/buildco.png";
 import iseeWell from "../assets/images/iseeWell.png";
@@ -12,7 +11,6 @@ import AssignmentCrud from "../assets/images/Assignment-Crud.png";
 import TherapistPage from "../assets/images/TherapistPage.png";
 import AllAccess from "../assets/images/AllAccess.png";
 import NotesApp from "../assets/images/NotesApp.png";
-import WebDevEnglish from "../assets/images/WebDevEnglish.webp";
 import CustomerReview from "../assets/images/CustomerReview.png";
 import Therapist from "../assets/images/Therapist.png";
 
@@ -23,7 +21,7 @@ const LatestWork = () => {
       className="min-h-screen flex flex-col items-center justify-center py-12"
     >
       <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16 mt-10">
-        <h2 class="text-4xl  bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto uppercase leading-tight border-b-4 border-blue-500 text-center text-white">
+        <h2 class="text-[25px] sm:text-3xl md:text-3xl lg:text-4xl bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto uppercase leading-tight border-b-4 border-blue-500 text-center text-white">
           Latest Works
         </h2>
 
@@ -72,7 +70,7 @@ const LatestWork = () => {
           <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://huts-hunts.netlify.app/"
+            href="#"
             class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
@@ -109,7 +107,7 @@ const LatestWork = () => {
           <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://procodrr.com"
+            href="#"
             class="flex w-full relative justify-center sm:justify-start"
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
@@ -179,7 +177,7 @@ const LatestWork = () => {
           <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://procodrr.com"
+            href="#"
             class="flex w-full relative justify-center sm:justify-start"
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
@@ -278,7 +276,7 @@ const LatestWork = () => {
           <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://huts-hunts.netlify.app/"
+            href="#"
             class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
@@ -315,7 +313,7 @@ const LatestWork = () => {
           <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
-            href="https://procodrr.com"
+            href="#"
             class="flex w-full relative justify-center sm:justify-start"
           >
             <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
@@ -895,7 +893,7 @@ const LatestWork = () => {
           </a>
         </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+        {/* <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
           <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
           <div class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
           <a
@@ -973,7 +971,7 @@ const LatestWork = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
       </section>
     </section>

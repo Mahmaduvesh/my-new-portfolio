@@ -94,9 +94,9 @@ const Navbar = () => {
           <ul className="space-y-4 text-left">
             {[
               "about",
+              "LatestWork",
               "skills",
               "experience",
-              "projects",
               "education",
               "contact",
             ].map((section) => (
