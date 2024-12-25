@@ -10,13 +10,13 @@ import {
 } from "react-icons/ai";
 import MatterComponent from "../components/MatterComponent"; // Make sure this component is set up correctly
 import AboutPopup from "../components/AboutPopup"; // Import AboutPopup component
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 
 const About = () => {
-  const [role, setRole] = useState("Shopify Developer");
   const [isPopupOpen, setPopupOpen] = useState(false); // State to manage the popup visibility
+  const [role, setRole] = useState("MERN Stack Developer");
 
-  // Function to handle role changes every 4 seconds
+  // Function to handle role changes every 3 seconds
   useEffect(() => {
     const roles = [
       "Shopify Developer",
@@ -30,7 +30,7 @@ const About = () => {
       index = (index + 1) % roles.length;
     };
 
-    const interval = setInterval(changeRole, 4000); // Change role every 4 seconds
+    const interval = setInterval(changeRole, 3000); // Change role every 4 seconds
 
     return () => clearInterval(interval); // Clean up on component unmount
   }, []);
@@ -66,11 +66,12 @@ const About = () => {
       <div className="relative text-left max-w-6xl flex flex-col md:flex-row md:items-center md:ml-10">
         {/* Text Content */}
         <div className="mb-8 md:mb-0 md:mr-16">
-          <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight text-left">
             Hi, I am{" "}
-            <span className="relative text-4xl sm:text-4xl md:text-5xl font-bold text-primary pb-1 inline-block group hover:text-blue-500 hover:scale-105 transition-all duration-300 ease-in-out">
-              Mahmaduvesh Khalifa
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary transform scale-x-100 transition-all duration-300 ease-in-out"></span>
+            <span className="relative text-primary font-bold pb-1 inline-block">
+              <span className="underline decoration-primary underline-offset-2 hover:text-blue-500 transition-all duration-300 ease-in-out">
+                Mahmaduvesh Khalifa
+              </span>
             </span>
           </h2>
 
@@ -94,15 +95,15 @@ const About = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex flex-wrap justify-center md:justify-start md:flex-col items-center space-x-4 md:space-x-0 md:space-y-4">
+        <div className="flex flex-wrap justify-center items-center space-x-4 sm:space-x-5 md:space-x-0 md:space-y-4 md:flex-col">
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/mahmaduvesh-khalifa-b48ba41a0/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <AiFillLinkedin className="text-white text-2xl" />
+            <AiFillLinkedin className="text-white text-lg sm:text-xl" />
           </a>
 
           {/* GitHub */}
@@ -110,9 +111,9 @@ const About = () => {
             href="https://github.com/mahmaduvesh"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <FaGithub className="text-white text-2xl" />
+            <FaGithub className="text-white text-lg sm:text-xl" />
           </a>
 
           {/* Twitter */}
@@ -120,17 +121,17 @@ const About = () => {
             href="https://x.com/Mahmaduvesh_k"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <AiFillTwitterCircle className="text-white text-2xl" />
+            <AiFillTwitterCircle className="text-white text-lg sm:text-xl" />
           </a>
 
           {/* Email */}
           <a
             href="mailto:khalifamahmaduvesh@gmail.com"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <AiFillMail className="text-white text-2xl" />
+            <AiFillMail className="text-white text-lg sm:text-xl" />
           </a>
 
           {/* Instagram */}
@@ -138,9 +139,9 @@ const About = () => {
             href="https://www.instagram.com/mr_uv_0311/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <AiFillInstagram className="text-white text-2xl" />
+            <AiFillInstagram className="text-white text-lg sm:text-xl" />
           </a>
 
           {/* Facebook */}
@@ -148,9 +149,19 @@ const About = () => {
             href="https://www.facebook.com/uvesh.khalifa.94"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform mb-4 md:mb-0"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-700 to-blue-900 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform"
           >
-            <AiFillFacebook className="text-white text-2xl" />
+            <AiFillFacebook className="text-white text-lg sm:text-xl" />
+          </a>
+
+          {/* WhatsApp (Visible only on mobile) */}
+          <a
+            href="https://wa.me/9662845122"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-yellow-400 to-green-500 rounded-full shadow-md hover:shadow-lg hover:scale-110 transition transform md:hidden"
+          >
+            <FaWhatsapp className="text-white text-lg sm:text-xl" />
           </a>
         </div>
       </div>

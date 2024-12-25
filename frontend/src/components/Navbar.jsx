@@ -30,6 +30,14 @@ const Navbar = () => {
         />
       </div>
 
+      {/* Portfolio Welcome Message for Mobile Only */}
+      {/* Animated Portfolio Welcome Message for Mobile Only */}
+      <div className="block lg:hidden text-center animate-fadeIn">
+        <span className="text-lg font-bold text-black">
+          Welcome to My Portfolio!
+        </span>
+      </div>
+
       {/* Hamburger Icon for mobile */}
       <div className="lg:hidden flex items-center">
         <button
@@ -58,7 +66,7 @@ const Navbar = () => {
         <ul className="lg:flex space-x-8 text-center">
           {[
             "about",
-            "LatestWork",
+            "Latest Work",
             "skills",
             "experience",
             "education",
@@ -89,12 +97,13 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-16 left-0 right-0 bg-white dark:white shadow-lg py-4 px-6">
+        <div className="lg:hidden absolute top-16 left-0 right-0 bg-white dark:bg-white shadow-lg py-4 px-6 z-20">
           <ul className="space-y-4 text-left">
             {[
               "about",
-              "LatestWork",
+              "Latest Work",
               "skills",
               "experience",
               "education",

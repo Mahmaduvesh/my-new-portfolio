@@ -18,7 +18,7 @@ const Experience = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-yellow-500"
+              className="absolute -top-0.5 z-0 -ml-3.5 h-7 w-7 rounded-full text-yellow-500"
             >
               <path
                 fillRule="evenodd"
@@ -67,7 +67,7 @@ const Experience = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
+              className="absolute -top-0.5 z-0 -ml-3.5 h-7 w-7 rounded-full text-blue-500"
             >
               <path
                 fillRule="evenodd"
@@ -104,7 +104,7 @@ const Experience = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-green-500"
+              className="absolute -top-0.5 z-0 -ml-3.5 h-7 w-7 rounded-full text-green-500"
             >
               <path
                 fillRule="evenodd"

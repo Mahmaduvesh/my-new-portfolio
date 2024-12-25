@@ -2,14 +2,14 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="text-center py-40">
+    <div className="text-center py-20 sm:py-24 md:py-28 lg:py-32 xl:py-36">
       {/* Skills Title */}
       <div className="text-center px-4 lg:px-20">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-6 tracking-wider uppercase leading-tight inline-block border-b-4 border-blue-500 pb-1">
           Skills
         </h2>
 
-        <p className="text-lg text-gray-800 mb-12 max-w-6xl mx-auto">
+        <p className="text-md sm:text-base md:text-lg text-gray-800 mb-12 max-w-6xl mx-auto text-justify sm:text-left">
           With a wealth of experience and a dedication to staying ahead in the
           field, my expertise spans various areas. Below is a brief overview of
           the key skills that guide my work and lead to successful project

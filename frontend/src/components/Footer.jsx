@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   AiFillLinkedin,
   AiFillTwitterCircle,
@@ -5,10 +6,28 @@ import {
   AiFillFacebook,
   AiFillMail,
   AiFillGithub,
+  AiOutlineArrowUp,
 } from "react-icons/ai";
-import React from "react";
 
 const Footer = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  // Track scroll position to show/hide the button
+  useEffect(() => {
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        setShowButton(true);
+      } else {
+        // Scrolling up
+        setShowButton(false);
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  }, []);
+
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
@@ -93,12 +112,22 @@ const Footer = () => {
         </div>
 
         {/* Lower Section */}
-        <div className="text-center text-sm text-gray-400 mt-6">
+        <div className="text-center text-sm text-gray-400 mt-6 relative">
           <p>© 2024 Mahmaduvesh Khalifa. All rights reserved.</p>
           <p>
             Made with ❤️ and dedication by{" "}
             <span className="font-semibold text-white">MK</span>
           </p>
+
+          {showButton && (
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="fixed bottom-3 right-3 bg-blue-600 text-white rounded-full p-3 sm:p-4 shadow-xl hover:bg-blue-700 focus:outline-none transition-all ease-in-out duration-300 transform hover:scale-110"
+            >
+              <AiOutlineArrowUp className="h-4 w-4 sm:h-5 sm:w-5" />{" "}
+              {/* Adjust icon size for small screens */}
+            </button>
+          )}
         </div>
       </div>
     </footer>

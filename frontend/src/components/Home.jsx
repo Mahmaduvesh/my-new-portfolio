@@ -22,7 +22,7 @@ const Home = () => {
       </section>
 
       {/* LatestWork Section */}
-      <section id="LatestWork">
+      <section id="Latest Work">
         <LatestWork />
       </section>
 

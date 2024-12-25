@@ -45,12 +45,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-10 px-4 "
+      className="min-h-screen flex items-center justify-center py-20 px-4 "
     >
       <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8">
-        <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-6">
-          Contact Me
-        </h2>
+        <div className="flex justify-center items-center mb-4">
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-2 tracking-wider uppercase leading-tight inline-block border-b-4 border-blue-500 pb-1">
+            Contact me
+          </h2>
+        </div>
+
         <p className="text-gray-600 text-center mb-8">
           I'm here to answer your questions and collaborate on exciting
           projects. Drop me a message!
@@ -62,7 +65,7 @@ const Contact = () => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-600"
             >
-              Your Email
+              Email
             </label>
             <input
               type="email"
@@ -82,7 +85,7 @@ const Contact = () => {
               htmlFor="name"
               className="block text-sm font-medium text-gray-600"
             >
-              Your Name
+              Name
             </label>
             <input
               type="text"

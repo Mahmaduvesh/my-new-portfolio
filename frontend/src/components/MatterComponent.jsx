@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
 
 const MatterComponent = () => {
   const canvasRef = useRef(null);
+  const [cursorStyle, setCursorStyle] = useState({ left: "0px", top: "0px" });
 
   useEffect(() => {
     const dimensions = {
@@ -157,7 +158,34 @@ const MatterComponent = () => {
     };
   }, []);
 
-  return <div ref={canvasRef}></div>;
+  const handleMouseMove = (e) => {
+    setCursorStyle({
+      left: `${e.clientX - 10}px`, // Adjust cursor position
+      top: `${e.clientY - 10}px`,
+    });
+  };
+
+  // Add mouse move event listener to change cursor position
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <div
+      ref={canvasRef}
+      className="min-h-screen w-full flex items-center justify-center overflow-x-hidden relative"
+    >
+      {/* Custom cursor */}
+      <div
+        style={{
+          top: cursorStyle.top,
+          left: cursorStyle.left,
+        }}
+        className="absolute w-12 h-12 rounded-full bg-black pointer-events-none transition-transform duration-200 ease-in-out"
+      />
+    </div>
+  );
 };
 
 export default MatterComponent;
